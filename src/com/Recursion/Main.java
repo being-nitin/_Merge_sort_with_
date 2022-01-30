@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// merge sort with complexity of o(nlogn);.
-        int[] arr = {0,1,1,1,0,0,1};
+        int[] arr = {6,4,9,2,1};
         System.out.println(Arrays.toString(mergesort(arr)));
 
     }
@@ -35,6 +35,8 @@ public class Main {
             }
             k++;
         }
+        // it may be possible that one of the array is not complete.
+        // copy the remaining elements.
         while(i< first.length){
             arrFinal[k] = first[i];
             i++;
